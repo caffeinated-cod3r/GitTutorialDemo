@@ -136,6 +136,145 @@
 
 
 
+// Too see the changes 
+// “git log”
+
+// too see the commits along with differences
+// “git log -p”
+
+
+// too see specific number of commits along with differences
+// “git log -p -2 or 3”
+
+
+// too see the stats of insertions and deletions
+// “git log –stat”
+
+// to see all commits each in a single line 
+// “git log –pretty=oneline”
+
+// to see commit author and message only
+// “git log –pretty=short”
+
+
+// to see some more info as compared to “git log –pretty=short”, long will show author and  committer both.
+// “git log –pretty=long”
+
+
+// to see commits since certain days
+// “git log –since =2.days”
+// “git log –since =2.weeks”
+// “git log –since =2.months”
+// “git log –since =2.years”
+
+
+// go to scm documentation then go to pretty formats and you can use placeholders as mentioned in that section , like to see the list having hash and author name
+// “git log –pretty=format: “%h –%an”
+
+
+//  to see the list having hash and author email
+// “git log –pretty=format: “%h –%ae”
+
+
+
+
+
+// We can change the old commit also, 
+// “git log -p -1” to get a specific commit 
+
+// make some change in the repository, then stage the changed file then
+// “git log –amend’
+
+// a vim notepad will open , change or append or amend the commit message in it and thats it,
+// now that commit has been amended.
+ 
+// To edit in vim notepad (type I and start typing to change, then press escape then press colon along with shift then pess w and then press q and then enter.
+
+
+
+// To unstage a file 
+// “git restore –staged filename”
+
+
+
+// to revert a specific file of  a repository to previous commit, the new changes will be deleted in that file of the repository.
+// “git checkout –filename”
+
+
+// if you add a file and then do
+// “git checkout –filename” 
+// then nothing of the file will be deleted, and in git status nothing will be changed, so its kind of safety lock, like the safety of a pistol.
+
+
+
+// It will revert all files of a repository to previous commit.
+// “git checkout -f”
+
+
+// making a remote repository out of a local repository
+// “git remote add origin(urlname) https://github.com/caffeinated-cod3r/GitTutorialDemo.git (this lin is achieved after creating a repository on Git Hub)
+
+
+// to get links for push and get
+// “git remote -v”
+
+
+// then create SSH key by going to git hub documentation, and copying first command , no need to copy paste two many commands.
+// ssh-keygen -t ed25519 -C "your_email@example.com"
+
+
+// Add your SSH private key to the ssh-agent
+// ssh-add ~/.ssh/id_ed25519
+
+
+
+// Copy the SSH public key to your clipboard. 
+
+// cat ~/.ssh/id_ed25519.pub (as per git hub documentation)
+// tail ~/.ssh/id_ed25519.pub (as per harry bhai)
+
+
+// then paste it add SSH key in git hub
+
+// after that generate a Git Hub personal access token that will be used instead of password by following Git Hub documentation
+
+// and thats it, its done.
+
+// And at the end of the procedure, type
+
+
+
+// Git hub personal access token
+// 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
+
+
+
+// Alias
+// to choose an alternate code for status as st
+// “git config –global alias.st status”
+
+
+// to remove an alias
+// git config --global --unset alias.st
+
+
+
+// to choose an alternate code for commit as ci
+// “git config –global alias.ci commit”
+
+ 
+
+
+
+// to config that whenever I write unstage word the following ‘restore –staged –’ should automatically run invisibly
+// “git config –global alias.unstage ‘restore –staged –’
+
+// so now I will just type
+// “git unstage filename” to unstage a file
+
+
+
+
 
 
 
